@@ -48,6 +48,8 @@ body, html {
 #box1 p {
     transition: font-size 1.5s; /* Apply a 2-second transition to the font-size */
     font-size: 75px; /* Initial font size */
+    color: rgb(205, 11, 11);
+    background-color: #01ff00;
 }
 
 #box1 p:hover {
@@ -57,18 +59,27 @@ body, html {
 #box2 p {
     transition: font-size 1.5s; /* Apply a 2-second transition to the font-size */
     font-size: 75px; /* Initial font size */
+    color: rgb(205, 11, 11);
+    background-color: #01ff00;
 }
 
 #box2 p:hover {
     font-size: 125px; /* Smaller font size when hovered */
 }
 
+#box3 p{
+    color: rgb(205, 11, 11);
+    background-color: #01ff00;
+}
+
+
 #box3 p:hover {
     color: #201A1B;
+    background-color: #201A1B;
 }
 
 #box4 p:hover {
-    color: #690005;
+    color: rgb(205, 11, 11);
     font-style: italic;
 }
 
@@ -78,7 +89,7 @@ body, html {
 }
 
 #box5 p:hover {
-    font-size: 100px; /* Smaller font size when hovered */
+    font-size: 100px; 
     color: #01ff00;
 }
 
@@ -95,4 +106,33 @@ body, html {
     display: inline-block; 
     font-size: 55px; 
     box-sizing: border-box; 
+}
+
+.permanent-style {
+    color: rgb(205, 11, 11);
+    font-style: italic;
+}
+
+.clicked-style {
+    font-size: 175px; /* Smaller font size when hovered */
+    color: #01ff00;
+}
+
+.box {
+    position: relative; /* Make sure .box is positioned */
+}
+
+.box p, .box a {
+    position: relative; /* Position text elements relative */
+    z-index: 2; /* Ensure they appear above the image */
+}
+
+#pic6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire box */
+    height: 100%;
+    z-index: 1; /* Set behind the text */
+    object-fit: cover; /* Ensure the image covers the box without distorting */
 }
