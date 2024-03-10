@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -37,14 +39,41 @@ body, html {
 
 }
 
-#box6 {
-    color: #FFB1C8;
-    font-size: 150px;
-}
-
 .box p {
+    font-family: "Nunito Sans", sans-serif;
     text-align: center;
     width: 100%; 
+}
+
+#box1 p {
+    transition: font-size 1.5s; /* Apply a 2-second transition to the font-size */
+    font-size: 75px; /* Initial font size */
+}
+
+#box1 p:hover {
+    font-size: 25px; /* Smaller font size when hovered */
+}
+
+#box2 p {
+    transition: font-size 1.5s; /* Apply a 2-second transition to the font-size */
+    font-size: 75px; /* Initial font size */
+}
+
+#box2 p:hover {
+    font-size: 125px; /* Smaller font size when hovered */
+}
+
+#box3 p:hover {
+    color: #201A1B;
+}
+
+
+#question {
+    color: #FFB1C8; /* Custom color */
+    font-size: 150px; /* Custom font size */
+    text-decoration: none; /* Removes the underline */
+    font-family: 'Nunito Sans', sans-serif; /* Assuming you want to keep the font consistent */
+    display: inline-block; /* Allows for padding, if necessary */
 }
 
 #accomplish {
