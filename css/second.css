@@ -1,7 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh; 
+    justify-content: space-around;
+    align-content: stretch; 
+}
+
+.box {
+    color: #ebe0e1;
+    font-size: 75px;
+    width: calc(100% / 3); /* Divide the width by 3 for 3 columns */
+    height: 50%; /*  half the height for 2 rows */
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #01ff00; 
+    background-color: #201A1B;
+}
+
+.box img {
+    width: 100%;
+
+}
+
+.box p {
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    width: 100%; 
+    font-size: 2vw; /* Example using viewport width for scaling font size */
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+
+
+#sayOriginal {
+    font-size: 28px; /* Original font size */
+    color: #ebe0e1; /* Original color */
+}
+
+@keyframes colorFade {
+    from {
+        color: #ebe0e1;
+    }
+    to {
+        color: rgb(205, 11, 11);
+    }
+}
+
+.fadeTextColorRed {
+    animation-name: colorFade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; /* Keeps the state at the end of the animation */
+}
+
+@keyframes colorFadeGreen {
+    from {
+        color: #ebe0e1;
+    }
+    to {
+        color: #01ff00; /* New target color */
+    }
+}
+
+.fadeTextColorGreen {
+    animation-name: colorFadeGreen;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
