@@ -4,6 +4,11 @@ $(document).ready(function() {
     $("#No").hide();
     $("#Yes").hide();
     $("#ParksQuote").hide();
+    $("#DianaQuote").hide();
+    $("#KahloQuote").hide();
+    $("#OKeeffeQuote").hide();
+    $("#TeressaQuote").hide();
+    $("#KellerQuote").hide();
     $(".wrong").hide();
     $(".again").hide();
     $("#pic1").hide();
@@ -98,21 +103,151 @@ $(document).ready(function() {
         $("#pic1").hide();
         $("#Yes").hide();
         $("#No").hide();
+        $("#say").hide();
         $("#pic2").show();
 
     });
 
     $("#pic2").click(function() {
-        $("#pic2").hide();
+        $("#ParksQuote").show();
         $("#Yes").hide();
         $("#No").hide();
-        $("#ParksQuote").show();
+        $("#say").hide();
 
     });
     
     $("#ParksQuote").click(function() {
+        $("#pic2").hide();
         $("#pic3").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
         $("#ParksQuote").hide();
+
+    });
+
+    $("#pic3").click(function() {
+        $("#pic3").hide();
+        $("#pic4").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+
+    });
+
+    $("#pic4").click(function() {
+        $("#DianaQuote").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+
+    });
+
+    $("#DianaQuote").click(function() {
+        $("#pic4").hide();
+        $("#pic5").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+        $("#DianaQuote").hide();
+
+    });
+
+    $("#pic5").click(function() {
+        $("#pic5").hide();
+        $("#pic6").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+
+    });
+
+    $("#pic6").click(function() {
+        $("#KahloQuote").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+
+    });
+
+    $("#KahloQuote").click(function() {
+        $("#pic6").hide();
+        $("#pic7").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+        $("#KahloQuote").hide();
+
+    });
+
+    $("#pic7").click(function() {
+        $("#pic7").hide();
+        $("#pic8").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+
+    });
+
+    $("#pic8").click(function() {
+        $("#OKeeffeQuote").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+
+    });
+
+    $("#OKeeffeQuote").click(function() {
+        $("#pic8").hide();
+        $("#pic9").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+        $("#OKeeffeQuote").hide();
+
+    });
+
+    $("#pic9").click(function() {
+        $("#pic9").hide();
+        $("#pic10").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+
+    });
+
+    $("#pic10").click(function() {
+        $("#TeressaQuote").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+
+    });
+
+    $("#TeressaQuote").click(function() {
+        $("#pic10").hide();
+        $("#pic11").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+        $("#TeressaQuote").hide();
+
+    });
+
+    $("#pic11").click(function() {
+        $("#pic11").hide();
+        $("#pic12").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
+
+    });
+
+    $("#pic12").click(function() {
+        $("#KellerQuote").show();
+        $("#Yes").hide();
+        $("#No").hide();
+        $("#say").hide();
 
     });
 
