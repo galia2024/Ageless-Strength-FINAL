@@ -8,8 +8,6 @@ $(document).ready(function() {
     $("#pic4").hide();
     $("#pic5").hide();
     $("#pic6").hide();
-    
-
 
     $("#ARE").click(function() {
         var currentBg = $("#box1").css('background-image');     
@@ -100,9 +98,5 @@ $(document).ready(function() {
             }, 3000); 
         }
     });
-
-
-    
-
 
 });
