@@ -87,17 +87,17 @@ $(document).ready(function() {
         if (!$(event.target).closest('#question').length) {
             $("#pic6").toggle();
         }
-        // Check if #pic6 is visible after toggling
+
         if ($("#pic6").is(":visible")) {
-            // If visible, animate #question to grow to 200px
+
             $("#question").animate({
                 fontSize: "200px"
-            }, 3000); // Animate over 3 seconds
+            }, 3000); 
         } else {
-            // If not visible, optionally reset #question size or other properties
+
             $("#question").animate({
-                fontSize: "150px" // Resetting to default or another size
-            }, 3000); // Animate over 3 seconds
+                fontSize: "150px" 
+            }, 3000); 
         }
     });
 

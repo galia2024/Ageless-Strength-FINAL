@@ -32,49 +32,49 @@ $(document).ready(function() {
         });
     }
 
-    // Specific animation for #say that includes fading out after fully appearing
+
     function animateAndFadeOutSay() {
         $("#say").fadeTo(2000, 1).animate({
             fontSize: "36px"
         }, 2000, function() {
             $(this).addClass("fadeTextColorRed");
-            // Wait for 2 seconds, then fade out
+
             $(this).delay(5500).fadeTo(2000, 0);
         });
     }
 
     function showAndEnlargeSay() {
-        // Wait 1 second after page load to start the effect on #say
+
         setTimeout(function() {
             animateAndFadeOutSay();
         }, 1000);
     }
 
     function showAndEnlargeYesNo() {
-        // Wait for #say animation and fading to complete before starting #No and #Yes animations
+
         setTimeout(function() {
-            $("#No, #Yes").show(); // Make sure #No and #Yes are visible for animation
+            $("#No, #Yes").show(); 
             animateElement("#No", "100px", "fadeTextColorGreen");
             animateElement("#Yes", "100px", "fadeTextColorGreen");
-        }, 8000); // Timing adjusted to ensure #say has completed its sequence
+        }, 8000); 
     }
 
     function triggerWrongAndAgain() {
-        // Hide #Yes and #No when #Yes is clicked
+
         $("#Yes, #No, #say").hide();
 
-        // Show .wrong and .again for 3 seconds, then navigate back
+
         $(".wrong, .again").show().delay(5000).fadeOut(500, function() {
             window.history.back();
         });
     }
 
-    // Event listener for #Yes click
+
     $("#Yes").click(function() {
         triggerWrongAndAgain();
     });
 
-    // Event listener for keydown "Y" or "y"
+
     $(document).keydown(function(e) {
         if(e.key === "Y" || e.key === "y") {
             triggerWrongAndAgain();
@@ -82,17 +82,16 @@ $(document).ready(function() {
     });
 
     function handleNoAction() {
-        // Hide everything except for #pic1
         $("#say, #No, #Yes, .wrong, .again, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10, #pic11, #pic12").hide();
         $("#pic1").show(); 
     }
 
-    // Event listener for #No click
+
     $("#No").click(function() {
         handleNoAction();
     });
 
-    // Event listener for keydown "N" or "n"
+
     $(document).keydown(function(e) {
         if(e.key === "N" || e.key === "n") {
             handleNoAction();
@@ -251,7 +250,6 @@ $(document).ready(function() {
 
     });
 
-    // Trigger the animations
     showAndEnlargeSay();
     showAndEnlargeYesNo();
 });

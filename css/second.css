@@ -24,8 +24,8 @@ body, html {
 .box {
     color: #ebe0e1;
     font-size: 75px;
-    width: calc(100% / 3); /* Divide the width by 3 for 3 columns */
-    height: 50%; /*  half the height for 2 rows */
+    width: calc(100% / 3); 
+    height: 50%; 
     box-sizing: border-box; 
     display: flex;
     flex-direction: column;
@@ -39,8 +39,8 @@ body, html {
 .box img {
 
 
-    width: 100%; /* Adjust width to maintain aspect ratio */
-    height: auto; /* Make image fill the box height */
+    width: 100%; 
+    height: auto; 
 
 }
 
@@ -48,15 +48,15 @@ body, html {
     font-family: "Nunito Sans", sans-serif;
     text-align: center;
     width: 100%; 
-    font-size: 2vw; /* Example using viewport width for scaling font size */
+    font-size: 2vw; 
     font-size: clamp(16px, 2vw, 24px);
 }
 
 
 
 #sayOriginal {
-    font-size: 28px; /* Original font size */
-    color: #ebe0e1; /* Original color */
+    font-size: 28px; 
+    color: #ebe0e1; 
 }
 
 @keyframes colorFade {
@@ -71,7 +71,7 @@ body, html {
 .fadeTextColorRed {
     animation-name: colorFade;
     animation-duration: 2s;
-    animation-fill-mode: forwards; /* Keeps the state at the end of the animation */
+    animation-fill-mode: forwards; 
 }
 
 @keyframes colorFadeGreen {
@@ -79,7 +79,7 @@ body, html {
         color: #ebe0e1;
     }
     to {
-        color: #01ff00; /* New target color */
+        color: #01ff00; 
     }
 }
 
@@ -89,3 +89,7 @@ body, html {
     animation-fill-mode: forwards;
 }
 
+#KellerQuote a {
+    color: inherit; 
+    text-decoration: none; 
+}

@@ -46,25 +46,25 @@ body, html {
 }
 
 #box1 p {
-    transition: font-size 1.5s; /* Apply a 2-second transition to the font-size */
-    font-size: 75px; /* Initial font size */
+    transition: font-size 1.5s; 
+    font-size: 75px; 
     color: rgb(205, 11, 11);
     background-color: #01ff00;
 }
 
 #box1 p:hover {
-    font-size: 25px; /* Smaller font size when hovered */
+    font-size: 25px; 
 }
 
 #box2 p {
-    transition: font-size 1.5s; /* Apply a 2-second transition to the font-size */
-    font-size: 75px; /* Initial font size */
+    transition: font-size 1.5s; 
+    font-size: 75px; 
     color: rgb(205, 11, 11);
     background-color: #01ff00;
 }
 
 #box2 p:hover {
-    font-size: 125px; /* Smaller font size when hovered */
+    font-size: 125px; 
 }
 
 #box3 p{
@@ -84,8 +84,8 @@ body, html {
 }
 
 #box5 p {
-    transition: font-size 1.5s; /* Apply a 2-second transition to the font-size */
-    font-size: 75px; /* Initial font size */
+    transition: font-size 1.5s; 
+    font-size: 75px; 
 }
 
 #box5 p:hover {
@@ -94,11 +94,11 @@ body, html {
 }
 
 #question {
-    color: #FFB1C8; /* Custom color */
-    font-size: 150px; /* Custom font size */
-    text-decoration: none; /* Removes the underline */
-    font-family: 'Nunito Sans', sans-serif; /* Assuming you want to keep the font consistent */
-    display: inline-block; /* Allows for padding, if necessary */
+    color: #FFB1C8; 
+    font-size: 150px; 
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif; 
+    display: inline-block; 
 }
 
 #accomplish {
@@ -114,25 +114,25 @@ body, html {
 }
 
 .clicked-style {
-    font-size: 175px; /* Smaller font size when hovered */
+    font-size: 175px; 
     color: #01ff00;
 }
 
 .box {
-    position: relative; /* Make sure .box is positioned */
+    position: relative; 
 }
 
 .box p, .box a {
-    position: relative; /* Position text elements relative */
-    z-index: 2; /* Ensure they appear above the image */
+    position: relative; 
+    z-index: 2; 
 }
 
 #pic6 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Cover the entire box */
+    width: 100%; 
     height: 100%;
-    z-index: 1; /* Set behind the text */
-    object-fit: cover; /* Ensure the image covers the box without distorting */
+    z-index: 1; 
+    object-fit: cover; 
 }
